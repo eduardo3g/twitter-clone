@@ -5,6 +5,11 @@ import {
   Header,
   BackIcon,
   ProfileInfo,
+  BottomMenu,
+  HomeIcon,
+  SearchIcon,
+  BellIcon,
+  EmailIcon
 } from './styles';
 
 const Main: React.FC = () => {
@@ -23,12 +28,12 @@ const Main: React.FC = () => {
 
       {/* <ProfilePage /> */}
 
-      {/* <BottomMenu>
+      <BottomMenu>
         <HomeIcon />
         <SearchIcon />
         <BellIcon />
         <EmailIcon />
-      </BottomMenu> */}
+      </BottomMenu>
     </Container>
   );
 }
