@@ -3,7 +3,7 @@ import { createGlobalStyle } from 'styled-components';
 export default createGlobalStyle`
   * {
     margin: 0;
-    padding: 09%;
+    padding: 0;
     box-sizing: border-box;
 
     color: var(--white);
@@ -32,7 +32,7 @@ export default createGlobalStyle`
     --secondary: #15181C;
     --search: #202327;
     --white: #D9D9D9;
-    --gray: #7A7A7A;
+    --grey: #7A7A7A;
     --outline: #2F3336;
     --retweet: #00C06B;
     --like: #E8265E;
