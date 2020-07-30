@@ -41,7 +41,55 @@ export const Avatar = styled.div`
   bottom: max(-60px, -10vw);
   left: 15px;
 `;
-export const ProfileData = styled.div``;
+export const ProfileData = styled.div`
+  padding: min(calc(10vh + 7px), 67px) 16px 0;
+
+  display: flex;
+  flex-direction: column;
+
+  position: relative;
+
+  > h1 {
+    font-weight: bold;
+    font-size: 19px;
+  }
+
+  > h2 {
+    font-weight: normal;
+    font-size: 15px;
+
+    color: var(--grey);
+  }
+
+  > p {
+    font-size: 15px;
+    margin-top: 11px;
+
+    > a {
+      text-decoration: none;
+      color: var(--twitter);
+    }
+  }
+
+  > ul {
+    list-style: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    > li {
+      display: flex;
+      align-items: center;
+
+      font-size: 15px;
+      color: var(--grey);
+
+      > svg {
+        fill: var(--grey);
+        margin-right: 5px;
+      }
+    }
+  }
+`;
 
 const iconCSS = css`
   width: 20px;

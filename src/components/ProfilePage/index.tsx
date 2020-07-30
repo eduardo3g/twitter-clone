@@ -24,7 +24,7 @@ const ProfilePage: React.FC = () => {
         <h2>@eduardo3g</h2>
 
         <p>
-          Integration Engineer at <a href="https://linkapi.solutions">LinkApi</a>
+          Integration Engineer at <a href="https://linkapi.solutions">@LinkApi</a>
         </p>
 
         <ul>
