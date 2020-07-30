@@ -105,4 +105,15 @@ export const CakeIcon = styled(Cake)`
   ${iconCSS};
 `;
 
-export const Followage = styled.div``;
+export const Followage = styled.div`
+  display: flex;
+
+  > span {
+    font-size: 15px;
+    color: var(--grey);
+
+    & + span {
+      margin-left: 20px;
+    }
+  }
+`;
