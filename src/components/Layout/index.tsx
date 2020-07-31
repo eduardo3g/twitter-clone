@@ -1,13 +1,12 @@
 import React from 'react';
 
 import MenuBar from '../MenuBar';
+import SideBar from '../SideBar';
 import Main from '../Main';
 
 import {
   Container,
   Wrapper,
-  // Main,
-  // SideBar,
 } from './styles';
 
 const Layout: React.FC = () => {
@@ -16,7 +15,7 @@ const Layout: React.FC = () => {
       <Wrapper>
         <MenuBar />
         <Main />
-        {/* <SideBar /> */}
+        <SideBar />
       </Wrapper>
     </Container>
   );
