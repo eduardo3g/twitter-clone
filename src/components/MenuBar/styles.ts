@@ -132,17 +132,26 @@ export const BotSide = styled.div`
   align-items: center;
 
   margin-top: 20px;
+
+  > img {
+    width: 39px;
+    height: 39px;
+
+    flex-shrink: 0;
+
+    border-radius: 50%;  
+  }
 `;
 
-export const Avatar = styled.div`
-  width: 39px;
-  height: 39px;
+// export const Avatar = styled.div`
+//   width: 39px;
+//   height: 39px;
 
-  flex-shrink: 0;
+//   flex-shrink: 0;
 
-  border-radius: 50%;
-  background-color: var(--grey);
-`;
+//   border-radius: 50%;
+//   background-color: var(--grey);
+// `;
 
 export const ProfileData = styled.div`
   display: none;

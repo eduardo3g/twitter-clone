@@ -12,11 +12,12 @@ import {
   ProfileIcon,
   ExitIcon,
   BotSide,
-  Avatar,
+  // Avatar,
   ProfileData,
 } from './styles';
 
 import Button from '../Button';
+import ProfilePicture from '../../assets/side-bottom-profile.jpg';
 
 const MenuBar: React.FC = () => {
   return (
@@ -51,7 +52,8 @@ const MenuBar: React.FC = () => {
       </TopSide>
 
       <BotSide>
-        <Avatar />
+        {/* <Avatar /> */}
+        <img src={ProfilePicture} alt="Eduardo Santana" />
 
         <ProfileData>
           <strong>Eduardo Santana</strong>

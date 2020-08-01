@@ -5,7 +5,7 @@ import Feed from '../Feed';
 import {
   Container,
   Banner,
-  Avatar,
+  // Avatar,
   ProfileData,
   LocationIcon,
   CakeIcon,
@@ -13,11 +13,14 @@ import {
   EditButton,
 } from './styles';
 
+import ProfilePicture from '../../assets/main-profile-picture.jpg';
+
 const ProfilePage: React.FC = () => {
   return (
     <Container>
       <Banner>
-        <Avatar />
+        {/* <Avatar /> */}
+        <img src={ProfilePicture} alt="Eduardo Santana" />
       </Banner>
 
       <ProfileData>

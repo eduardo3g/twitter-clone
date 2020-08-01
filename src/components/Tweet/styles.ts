@@ -43,19 +43,30 @@ export const Body = styled.div`
   margin-top: 3px;
 
   position: relative;
+
+  > img {
+    width: 49px;
+    height: 49px;
+    border-radius: 50%;
+    flex-shrink: 0;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
 `;
 
-export const Avatar = styled.div`
-  width: 49px;
-  height: 49px;
-  border-radius: 50%;
-  flex-shrink: 0;
-  background-color: var(--grey);
+// export const Avatar = styled.div`
+//   width: 49px;
+//   height: 49px;
+//   border-radius: 50%;
+//   flex-shrink: 0;
+//   background-color: var(--grey);
 
-  position: absolute;
-  top: 0;
-  left: 0;
-`;
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+// `;
 
 export const Content = styled.div`
   display: flex;
@@ -64,6 +75,21 @@ export const Content = styled.div`
   width: 100%;
   margin-top: 2px;
   padding-left: 59px;
+
+  > img {
+    margin-top: 12px;
+    width: 100%;
+    height: min(280px, max(175px, 41vw));
+
+    /* background: var(--outline); */
+    border-radius: 14px;
+
+    cursor: pointer;
+
+    &:hover {
+      opacity: .7;
+    }
+  }
 `;
 
 export const Header = styled.div`
@@ -100,20 +126,20 @@ export const Description = styled.p`
   margin-top: 4px;
 `;
 
-export const ImageContent = styled.div`
-  margin-top: 12px;
-  width: 100%;
-  height: min(280px, max(175px, 41vw));
+// export const ImageContent = styled.div`
+//   margin-top: 12px;
+//   width: 100%;
+//   height: min(280px, max(175px, 41vw));
 
-  background: var(--outline);
-  border-radius: 14px;
+//   background: var(--outline);
+//   border-radius: 14px;
 
-  cursor: pointer;
+//   cursor: pointer;
 
-  &:hover {
-    opacity: .7;
-  }
-`;
+//   &:hover {
+//     opacity: .7;
+//   }
+// `;
 
 export const Icons = styled.div`
   display: flex;

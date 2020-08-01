@@ -2,7 +2,7 @@ import React from 'react';
 
 import {
   Container,
-  Avatar,
+  // Avatar,
   Info,
   FollowButton,
 } from './styles';
@@ -10,16 +10,19 @@ import {
 interface Props {
   name: string;
   nickname: string;
+  avatar: string
 }
 
 const FollowSuggestion: React.FC<Props> = ({
   name,
-  nickname
+  nickname,
+  avatar,
 }) => {
   return (
     <Container>
       <div>
-        <Avatar />
+        {/* <Avatar /> */}
+        <img src={avatar} alt={nickname} />
 
         <Info>
           <strong>{name}</strong>

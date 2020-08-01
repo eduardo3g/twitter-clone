@@ -13,6 +13,14 @@ import {
   Body,
 } from './styles';
 
+import {
+  ProfileGuilhermeRodz,
+  RocketseatLogo,
+  ProfileDiegoFernandes,
+  ProfileGabrielFroes,
+  ProfileErickWendel,
+} from '../../styles/Avatars';
+
 const SideBar: React.FC = () => {
   return (
     <Container>
@@ -49,20 +57,29 @@ const SideBar: React.FC = () => {
             title="Quem seguir"
             elements={[
               <FollowSuggestion
+                name="Erick Wendel"
+                nickname="@erickwendel_"
+                avatar={ProfileErickWendel}
+              />,
+              <FollowSuggestion
                 name="Gabriel Froes"
                 nickname="@GabrielFroes"
+                avatar={ProfileGabrielFroes}
               />,
               <FollowSuggestion
                 name="Rocketseat"
                 nickname="@rocketseat"
+                avatar={RocketseatLogo}
               />,
               <FollowSuggestion
                 name="Guilherme Rodz"
                 nickname="@guilherme_rodz"
+                avatar={ProfileGuilhermeRodz}
               />,
               <FollowSuggestion
                 name="Diego Fernandes"
                 nickname="@dieegosf"
+                avatar={ProfileDiegoFernandes}
               />
             ]}
           />

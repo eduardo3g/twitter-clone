@@ -29,20 +29,33 @@ export const Banner = styled.div`
   background: var(--twitter);
 
   position: relative;
+
+  > img {
+    width: max(45px, min(135px, 22vw));
+    height: max(45px, min(135px, 22vw));
+
+    border: 3.75px solid var(--primary);
+    border-radius: 50%;
+
+    position: absolute;
+    bottom: max(-60px, -10vw);
+    left: 15px;
+  }
 `;
 
-export const Avatar = styled.div`
-  width: max(45px, min(135px, 22vw));
-  height: max(45px, min(135px, 22vw));
+// export const Avatar = styled.div`
+//   width: max(45px, min(135px, 22vw));
+//   height: max(45px, min(135px, 22vw));
 
-  border: 3.75px solid var(--primary);
-  background: var(--grey);
-  border-radius: 50%;
+//   border: 3.75px solid var(--primary);
+//   background: var(--grey);
+//   border-radius: 50%;
 
-  position: absolute;
-  bottom: max(-60px, -10vw);
-  left: 15px;
-`;
+//   position: absolute;
+//   bottom: max(-60px, -10vw);
+//   left: 15px;
+// `;
+
 export const ProfileData = styled.div`
   padding: min(calc(10vh + 7px), 67px) 16px 0;
 
